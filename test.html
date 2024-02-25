@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .form-container{
+            width: 30%;
+        }
+        .policy{
+            font-size: 13px;
+        }
+        details{
+            list-style: none;
+            padding-right: 30px;
+            color: rgb(4, 108, 150);
+            font-size: 13px;
+        }
+        details div{
+            margin-left: 15px;
+            font-size: 13px;
+            margin-top: 5px; 
+        }
+        .new-amz {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            padding-left: 10px;
+        }
+        .line {
+            width: 120px;
+            height: 1px;
+            background-color: rgb(225, 220, 220);
+            
+        }
+        .text {
+            padding: 5px;
+            font-size: 13px;
+        }
+        .btn-light{
+            box-shadow: 2px 2px 2px grey;
+        }
+        
+    </style>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center ">
+    <div class="form-container mt-4">
+        <div class="text-center">
+            <img src="public/images/amazon-logo.png" width="135px" height="45px" >
+        </div>
+        <form action="" class="border rounded p-4 mt-3">
+            <h3>Sign in</h3>
+            <div>
+                <label for="email" class="form-label fw-bold fs-6">Email or mobile phone number</label>
+                <div>
+                    <input type="text" name="email" class="form-control">
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-warning w-100 mt-3 rounded">
+                    continue
+                </button>
+            </div>
+            <div class="mt-2">
+                <span class="policy">By creating an account or logging in, you agree to Amazon’s <span style="color: rgb(4, 108, 150);">Conditions of Use</span> and <span style="color: rgb(4, 108, 150);">Privacy Policy</span>.</span>
+            </div>
+            <div class="mt-4">
+                <span class=""></span>
+                <details>
+                    <summary >Need help?</summary>
+                    <div> <a href="">Forgot Password</a></div>
+                    <div> <a href="">Other issues with</a></div>
+                </details>
+            </div>
+        </form>
+        <div class="new-amz">
+            <div class="line"></div>
+            <div class="text">New to amazon?</div>
+            <div class="line"></div>
+        </div>
+        <div>
+           <a href="amazon-signup.html"> <button class="btn btn-light mt-4 w-100">Create your Amazon account</button></a>
+        </div>
+    </div>
+</body>
+</html>
